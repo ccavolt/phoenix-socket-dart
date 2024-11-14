@@ -1,6 +1,7 @@
 name: ci-test
 
 on:
+  workflow_dispatch:
   pull_request:
     paths:
       - "lib/**"
@@ -31,10 +32,10 @@ jobs:
         uses: dart-lang/setup-dart@v1
         with:
           architecture: x64
-          sdk: "3.1.2"
+          sdk: "3.5.3"
 
       - name: Fetch sources
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Fetch dependencies
         run: dart pub get
