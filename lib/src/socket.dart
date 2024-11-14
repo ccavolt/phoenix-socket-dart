@@ -4,7 +4,8 @@ import 'dart:math';
 
 import 'package:logging/logging.dart';
 import 'package:phoenix_socket/src/utils/iterable_extensions.dart';
-import 'package:rxdart/rxdart.dart';
+import 'package:rxdart/subjects.dart';
+import 'package:rxdart/transformers.dart';
 import 'package:web_socket_channel/status.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
